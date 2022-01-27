@@ -136,7 +136,7 @@ func randString(n int, src rand.Source, prefix string) string {
 		cache >>= letterIdxBits
 		remain--
 	}
-	return prefix + string(b[0:30-len(prefix)])
+	return prefix + string(b[0:30-len(prefix)]) + "-123"
 }
 
 // Chains all credential types, in the following order:
