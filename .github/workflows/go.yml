@@ -1,7 +1,7 @@
 name: Functional Tests
 
 on:
-  pull_request:
+  push:
     branches:
     - master
 
@@ -46,3 +46,4 @@ jobs:
           sudo sysctl net.ipv6.conf.all.disable_ipv6=0
           sudo sysctl net.ipv6.conf.default.disable_ipv6=0
           make verify
+          make
